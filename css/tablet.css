@@ -1,2 +1,164 @@
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .section {
+    padding-bottom: 96px;
+  }
+
+  /* -------HEADER------- */
+  /* -------HEADER------- */
+  /* -------HEADER------- */
+
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    margin-right: 120px;
+  }
+
+  .header-menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .header-menu-item {
+  }
+  .header-menu-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--color-dark-navy-blue);
+    transition: color var(--transition-effect);
+  }
+
+  .header-menu-link:hover,
+  .header-menu-link:focus {
+    color: var(--color-pressed-state);
+  }
+
+  .current {
+    position: relative;
+    color: var(--color-pressed-state);
+  }
+
+  .current::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+
+    border-radius: 2px;
+
+    background: #404bbf;
+  }
+
+  .contact {
+    display: block;
+    font-style: normal;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--color-slate);
+    transition: color var(--transition-effect);
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--color-pressed-state);
+  }
+
+  /** ----------------HERO---------------*/
+  /** ----------------HERO---------------*/
+  /** ----------------HERO---------------*/
+  .hero-title {
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color-white);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 36px;
+  }
+
+  /* --------ADVANTAGES эдвАнтеджес----- */
+  /* --------ADVANTAGES эдвАнтеджес----- */
+  /* --------ADVANTAGES эдвАнтеджес----- */
+
+  .adv-list {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .adv-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  .adv-subtitle {
+    text-align: left;
+  }
+  /* SECTION-PRODUCTS display: none; */
+  /*  */
+  /*  */
+  /** ---------OUR-TEAM----------*/
+  /** ---------OUR-TEAM----------*/
+  /** ---------OUR-TEAM----------*/
+
+  .team-container {
+    max-width: 584px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .team-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+  /** ---------CUSTOMERS---------*/
+  /** ---------CUSTOMERS---------*/
+  /** ---------CUSTOMERS---------*/
+
+  .customers-container {
+  }
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-item {
+    height: 88px;
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+  /** --------------FOOTER---------------*/
+  /** --------------FOOTER---------------*/
+  /** --------------FOOTER---------------*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: baseline;
+  }
 }

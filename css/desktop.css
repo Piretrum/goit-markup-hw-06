@@ -1,2 +1,126 @@
 @media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  /* -------HEADER------- */
+  /* -------HEADER------- */
+  /* -------HEADER------- */
+
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--color-pressed-state);
+  }
+
+  /*  */
+  /*  */
+  /** ----------------HERO---------------*/
+  /** ----------------HERO---------------*/
+  /** ----------------HERO---------------*/
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* --------ADVANTAGES эдвАнтеджес----- */
+  /* --------ADVANTAGES эдвАнтеджес----- */
+  /* --------ADVANTAGES эдвАнтеджес----- */
+
+  .adv {
+    padding-top: 120px;
+  }
+
+  .adv-box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background: #f4f4fd;
+  }
+
+  .adv-list {
+    gap: 24px;
+  }
+
+  .adv-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
+
+  .adv-subtitle {
+  }
+
+  .adv-text {
+  }
+  /* -----SECTION-PRODUCTS----- */
+  /* -----SECTION-PRODUCTS----- */
+  /* -----SECTION-PRODUCTS----- */
+
+  .products {
+  }
+  .products-title {
+  }
+  .products-list {
+    display: flex;
+    gap: 24px;
+  }
+  .products-item {
+    flex-basis: calc((100% - 24px * 2) / 3);
+  }
+  /** ---------OUR-TEAM----------*/
+  /** ---------OUR-TEAM----------*/
+  /** ---------OUR-TEAM----------*/
+  .team {
+    padding-top: 120px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+  /** ---------CUSTOMERS---------*/
+  /** ---------CUSTOMERS---------*/
+  /** ---------CUSTOMERS---------*/
+  .customers {
+    padding-top: 120px;
+  }
+  .customers-container {
+  }
+  .customers-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .customers-item {
+    height: 88px;
+    flex-basis: calc((100% - 24px * 5) / 6);
+  }
+
+  /** --------------FOOTER---------------*/
+  /** --------------FOOTER---------------*/
+  /** --------------FOOTER---------------*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
