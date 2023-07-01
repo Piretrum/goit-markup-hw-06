@@ -58,21 +58,27 @@
 
 .btn-burger-open {
   stroke: #2e2f42;
+  background-color: transparent;
+  border: none;
 }
 /* --------MOB.MENU-------- */
 
 .mob-menu {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   z-index: 2;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   padding: 24px 24px 40px 40px;
   background: var(--color-white);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  overflow: auto;
 }
 
 .mob-menu-clouse {
@@ -90,7 +96,6 @@
   border: 1px solid rgba(46, 47, 66, 0.1);
   transition: background-color var(--transition-effect),
     border var(--transition-effect);
-  margin-bottom: 32px;
 }
 
 .mob-menu-clouse:hover,
@@ -109,24 +114,76 @@
 
 .modal-close-icon {
 }
+
+/* - mob-menu-menu - */
+
 .mob-menu-list {
+  margin-top: 80px;
+  margin-bottom: 20px;
 }
 .list {
 }
 .mob-menu-item {
 }
+
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
 .mob-menu-link {
-}
-.link {
-}
-.current {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--color-dark-navy-blue);
+  transition: color var(--transition-effect);
 }
 
+.mob-menu-link:hover,
+.mob-menu-link:focus {
+  color: var(--color-pressed-state);
+}
+
+.mob-current {
+  color: var(--color-primary-brand);
+}
+
+/* - mob-menu-contact - */
+
+.mob-menu-contact {
+  display: block;
+  margin-bottom: 48px;
+}
+
+.mob-menu-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mob-menu-contact [href="tel:+110001111111"] {
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: var(--color-primary-brand);
+}
+
+.mob-menu-contact [href="mailto:info@devstudio.com"] {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+}
+
+/* -- mob-menu-soc -- */
 .mob-menu-soc-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
 }
 
 .mob-menu-soc-item {
@@ -492,7 +549,7 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
 }
 
 .footer-form-input::placeholder {
@@ -508,7 +565,7 @@
   justify-content: center;
   align-items: center;
   max-width: 165px;
-  height: 40px;
+  padding: 8px 24px;
   border-radius: 4px;
   border: none;
 
@@ -533,9 +590,14 @@
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 427.98px) {
   .team-container {
     max-width: 296px;
+  }
+
+  .mob-menu-contact [href="tel:+110001111111"] {
+    /* font-size: calc(5px + 3vw); */
+    font-size: calc(1rem + 1.23vw);
   }
 }
 
