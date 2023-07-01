@@ -56,6 +56,110 @@
   display: none;
 }
 
+.btn-burger-open {
+  stroke: #2e2f42;
+}
+/* --------MOB.MENU-------- */
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 24px 40px 40px;
+  background: var(--color-white);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.mob-menu-clouse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
+  background: #e7e9fc;
+  border: 1px solid rgba(46, 47, 66, 0.1);
+  transition: background-color var(--transition-effect),
+    border var(--transition-effect);
+  margin-bottom: 32px;
+}
+
+.mob-menu-clouse:hover,
+.mob-menu-clouse:focus {
+  background-color: var(--color-pressed-state);
+  border: none;
+}
+.mob-menu-close-icon {
+  transition: fill var(--transition-effect);
+}
+
+.mob-menu-clouse:hover .mob-menu-close-icon,
+.mob-menu-clouse:focus .mob-menu-close-icon {
+  fill: var(--color-white);
+}
+
+.modal-close-icon {
+}
+.mob-menu-list {
+}
+.list {
+}
+.mob-menu-item {
+}
+.mob-menu-link {
+}
+.link {
+}
+.current {
+}
+
+.mob-menu-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.mob-menu-soc-item {
+}
+.soc-item {
+}
+
+.mob-menu-soc-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--color-primary-brand);
+  transition: background-color var(--transition-effect);
+}
+
+.mob-menu-soc-link:hover,
+.mob-menu-soc-link:focus {
+  background-color: var(--color-pressed-state);
+}
+
+.soc-icon {
+  fill: var(--color-light-cloud);
+}
+.mob-menu--soc-icon {
+}
+
+/* .mob-menu-icon {
+  stroke: #2e2f42;
+} */
+
 /** ----------------HERO---------------*/
 /** ----------------HERO---------------*/
 /** ----------------HERO---------------*/
@@ -86,7 +190,7 @@
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   color: var(--color-white);
   margin-right: auto;
   margin-left: auto;
@@ -286,19 +390,19 @@
 
 .footer {
   background-color: var(--color-dark-navy-blue);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 72px;
 }
 
 .footer-box-logo {
-  margin-right: 120px;
+  text-align: center;
 }
 
 .footer-logo {
@@ -317,7 +421,7 @@
 
 /* -footer-box-soc- */
 .footer-box-soc {
-  margin-right: 80px;
+  text-align: center;
 }
 
 .footer-subtitle {
@@ -353,6 +457,8 @@
 
 /* -footer-box-subscribe- */
 .footer-box-subscribe {
+  width: 100%;
+  text-align: center;
 }
 
 .footer-subtitle {
@@ -360,14 +466,19 @@
 
 .footer-sbscr-form {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 24px;
+  width: 100%;
 }
 .footer-form-label {
+  /* display: block; */
+  width: 100%;
 }
 
 .footer-form-input {
   display: inline-block;
-  width: 264px;
+  width: 100%;
   height: 40px;
 
   padding-left: 16px;
@@ -377,10 +488,11 @@
   letter-spacing: 0.04em;
   color: var(--color-white);
   border-radius: 4px;
-  border: 1px solid var(--white, #fff);
+  border: 1px solid var(--color-white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  opacity: 0.30000001192092896;
 }
 
 .footer-form-input::placeholder {
@@ -395,7 +507,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 165px;
+  max-width: 165px;
   height: 40px;
   border-radius: 4px;
   border: none;
@@ -424,6 +536,12 @@
 @media screen and (max-width: 428px) {
   .team-container {
     max-width: 296px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding: 24px 0;
   }
 }
 

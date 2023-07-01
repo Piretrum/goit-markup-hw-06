@@ -157,8 +157,110 @@
 
   .footer-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: flex-start;
+    max-width: 584px;
+  }
 
-    align-items: baseline;
+  .footer-box-logo {
+    text-align: left;
+  }
+
+  .footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .footer-logo-span {
+    color: var(--color-light-cloud);
+  }
+
+  .footer-text {
+    width: 264px;
+    color: var(--color-light-cloud);
+  }
+
+  /* -footer-box-soc- */
+  .footer-box-soc {
+    text-align: left;
+  }
+
+  .footer-subtitle {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  .footer-soc-list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .footer-soc-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-primary-brand);
+    transition: background-color var(--transition-effect);
+  }
+
+  .footer-soc-link:hover,
+  .footer-soc-link:focus {
+    background-color: var(--color-green);
+  }
+
+  /* -footer-box-subscribe- */
+  .footer-box-subscribe {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align: left;
+  }
+
+  .footer-subtitle {
+  }
+
+  .footer-sbscr-form {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .footer-form-label {
+    width: 264px;
+  }
+
+  .footer-form-input::placeholder {
+    font-size: 12px;
+    font-family: inherit;
+    line-height: 24px;
+    letter-spacing: 0.48px;
+    color: var(--color-white);
+  }
+
+  .f-form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+
+    color: var(--color-white);
+    background-color: var(--color-primary-brand);
+  }
+
+  .send-icon {
+    fill: var(--color-white);
+    margin-left: 16px;
   }
 }
