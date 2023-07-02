@@ -86,6 +86,16 @@
     color: var(--color-pressed-state);
   }
 
+  /* --------MOB.MENU-------- */
+
+  .mob-menu {
+    display: none;
+  }
+
+  .btn-burger-open {
+    display: none;
+  }
+
   /** ----------------HERO---------------*/
   /** ----------------HERO---------------*/
   /** ----------------HERO---------------*/

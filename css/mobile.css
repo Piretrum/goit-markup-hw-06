@@ -41,7 +41,6 @@
 }
 
 .header-logo {
-  /* margin-right: 76px; */
 }
 
 .header-logo-span {
@@ -181,6 +180,7 @@
 /* -- mob-menu-soc -- */
 .mob-menu-soc-list {
   display: flex;
+  max-width: 328px;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
@@ -588,6 +588,11 @@
   .container {
     max-width: 428px;
   }
+
+  /* .mob-menu {
+    top: 0;
+    margin: auto;
+  } */
 }
 
 @media screen and (max-width: 427.98px) {
@@ -596,8 +601,8 @@
   }
 
   .mob-menu-contact [href="tel:+110001111111"] {
-    /* font-size: calc(5px + 3vw); */
-    font-size: calc(1rem + 1.23vw);
+    font-size: calc(5px + 3vw);
+    /* font-size: calc(1rem + 1.23vw); */
   }
 }
 
