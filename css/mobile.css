@@ -56,6 +56,9 @@
 }
 
 .btn-burger-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   stroke: #2e2f42;
   background-color: transparent;
   border: none;
@@ -236,6 +239,12 @@
   background-position: center;
   background-size: cover;
   margin: auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .box {
+    background-image: url("../images/hero-image@2x-min.jpg");
+  }
 }
 
 .hero-container {
@@ -588,11 +597,6 @@
   .container {
     max-width: 428px;
   }
-
-  /* .mob-menu {
-    top: 0;
-    margin: auto;
-  } */
 }
 
 @media screen and (max-width: 427.98px) {
