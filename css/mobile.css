@@ -1,12 +1,12 @@
+.section {
+  padding: 96px 0;
+}
+
 .container {
   width: 100%;
   max-width: 1158px;
   padding: 0 16px;
   margin: 0 auto;
-}
-
-.section {
-  padding-bottom: 120px;
 }
 
 /* -------HEADER------- */
@@ -220,14 +220,13 @@
   stroke: #2e2f42;
 } */
 
-/** ----------------HERO---------------*/
-/** ----------------HERO---------------*/
-/** ----------------HERO---------------*/
+/** --------------HERO---------------*/
+/** --------------HERO---------------*/
+/** --------------HERO---------------*/
 
 .hero {
   background-color: var(--color-dark-navy-blue);
-  padding-bottom: 188px;
-  padding-top: 188px;
+  padding: 112px 0;
   background-image: linear-gradient(
       to bottom,
       rgba(46, 47, 66, 0.7),
@@ -275,49 +274,37 @@
   background-color: var(--color-pressed-state);
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--color-dark-navy-blue);
-  margin-bottom: 72px;
+/* --------benefits  эдвАнтеджес----- */
+/* --------benefits  эдвАнтеджес----- */
+/* --------benefits  эдвАнтеджес----- */
+
+.benefits {
 }
 
-/* --------ADVANTAGES эдвАнтеджес----- */
-/* --------ADVANTAGES эдвАнтеджес----- */
-/* --------ADVANTAGES эдвАнтеджес----- */
-
-.adv {
-  padding-top: 96px;
+.benefits-container {
 }
 
-.adv-container {
+.benefits-title {
 }
 
-.adv-title {
-}
-
-.adv-list {
+.benefits-list {
   display: flex;
   flex-wrap: wrap;
   gap: 72px;
 }
 
-.adv-item {
+.benefits-item {
   flex-basis: 100%;
 }
 
-.adv-box-icon {
+.benefits-box-icon {
   display: none;
 }
 
-.adv-subtitle {
+.benefits-subtitle {
   margin-bottom: 8px;
 }
-.adv-text {
+.benefits-text {
 }
 
 /* SECTION-PRODUCTS display: none;*/
@@ -329,7 +316,6 @@
 
 .team {
   background-color: var(--color-light-cloud);
-  padding-top: 96px;
 }
 
 .team-container {
@@ -344,10 +330,6 @@
   flex-wrap: wrap;
   gap: 72px;
   justify-content: center;
-}
-
-.team img {
-  max-width: 100%;
 }
 
 .team-item {
@@ -409,7 +391,6 @@
 /** ---------CUSTOMERS---------*/
 
 .customers {
-  padding: 96px 0;
 }
 .customers-container {
 }
@@ -617,7 +598,7 @@
 }
 
 @media screen and (max-width: 1157.98px) {
-  .adv-subtitle {
+  .benefits-subtitle {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -625,7 +606,7 @@
     letter-spacing: 0.72px;
   }
 
-  .adv-text {
+  .benefits-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;

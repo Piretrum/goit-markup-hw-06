@@ -3,16 +3,11 @@
     max-width: 768px;
   }
 
-  .section {
-    padding-bottom: 96px;
-  }
-
   /* -------HEADER------- */
   /* -------HEADER------- */
   /* -------HEADER------- */
 
   .header-nav {
-    display: flex;
     justify-content: space-between;
   }
 
@@ -96,12 +91,11 @@
     display: none;
   }
 
-  /** ----------------HERO---------------*/
-  /** ----------------HERO---------------*/
-  /** ----------------HERO---------------*/
+  /** -----------HERO----------*/
+  /** -----------HERO----------*/
+  /** -----------HERO----------*/
   .hero-title {
     max-width: 496px;
-    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -112,20 +106,20 @@
     margin-bottom: 36px;
   }
 
-  /* --------ADVANTAGES эдвАнтеджес----- */
-  /* --------ADVANTAGES эдвАнтеджес----- */
-  /* --------ADVANTAGES эдвАнтеджес----- */
+  /* --------benefits эдвАнтеджес----- */
+  /* --------benefits эдвАнтеджес----- */
+  /* --------benefits эдвАнтеджес----- */
 
-  .adv-list {
+  .benefits-list {
     row-gap: 72px;
     column-gap: 24px;
   }
 
-  .adv-item {
+  .benefits-item {
     flex-basis: calc((100% - 24px) / 2);
   }
 
-  .adv-subtitle {
+  .benefits-subtitle {
     text-align: left;
   }
   /* SECTION-PRODUCTS display: none; */
