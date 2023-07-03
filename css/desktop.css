@@ -1,6 +1,6 @@
 @media screen and (min-width: 1158px) {
   section {
-    padding: 120px 0px;
+    padding: 120px 0;
   }
 
   .container {
@@ -78,6 +78,7 @@
   /* -----SECTION-PRODUCTS----- */
 
   .products {
+    padding: 0 0 120px;
   }
   .products-title {
   }
@@ -91,10 +92,7 @@
   /** ---------OUR-TEAM----------*/
   /** ---------OUR-TEAM----------*/
   /** ---------OUR-TEAM----------*/
-  .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+
   .team-list {
     gap: 24px;
   }
