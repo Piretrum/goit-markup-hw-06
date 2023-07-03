@@ -120,9 +120,6 @@ section {
   fill: var(--color-white);
 }
 
-.modal-close-icon {
-}
-
 /* - mob-menu-menu - */
 
 .mob-menu-list {
@@ -248,7 +245,12 @@ section {
 
 @media (min-resolution: 192dpi) {
   .hero {
-    background-image: url("../images/hero-image-mob@2x.jpg");
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-image-mob@2x.jpg");
   }
 }
 
