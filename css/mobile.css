@@ -238,7 +238,7 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-image.jpg);
+    url(../images/hero-image-mob.jpg);
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -247,8 +247,8 @@ section {
 }
 
 @media (min-resolution: 192dpi) {
-  .box {
-    background-image: url("../images/hero-image@2x-min.jpg");
+  .hero {
+    background-image: url("../images/hero-image-mob@2x.jpg");
   }
 }
 
