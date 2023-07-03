@@ -1,5 +1,5 @@
 @media screen and (min-width: 1158px) {
-  .section {
+  section {
     padding: 120px 0;
   }
 
@@ -78,7 +78,6 @@
   /* -----SECTION-PRODUCTS----- */
 
   .products {
-    padding: 0 0 120px;
   }
   .products-title {
   }
